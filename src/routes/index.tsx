@@ -22,15 +22,15 @@ function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-hero">
-        <div className="container-page grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
+        <div className="container-page grid md:grid-cols-2 gap-8 md:gap-12 items-center section-y">
           <div className="space-y-6">
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-border text-xs font-medium shadow-soft">
               <Sparkles className="size-3.5 text-accent" /> Trusted by 12,000+ families
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
+            <h1 className="text-fluid-5xl font-bold tracking-tight">
               Find trusted care for your <span className="text-primary">amazing child</span>.
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-fluid-lg text-muted-foreground max-w-xl leading-relaxed">
               CareNest connects families with verified local support workers, therapists and service providers experienced in caring for children with disability.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
@@ -41,7 +41,7 @@ function HomePage() {
                 <Link to="/workers">Become a provider</Link>
               </Button>
             </div>
-            <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-1.5"><ShieldCheck className="size-4 text-primary" /> Police checked</div>
               <div className="flex items-center gap-1.5"><Star className="size-4 text-accent" fill="currentColor" /> 4.9 average rating</div>
             </div>
@@ -70,7 +70,7 @@ function HomePage() {
             { v: "4.9★", l: "Average rating" },
           ].map((s) => (
             <div key={s.l}>
-              <p className="text-2xl md:text-3xl font-bold text-primary font-display">{s.v}</p>
+              <p className="text-fluid-2xl font-bold text-primary font-display">{s.v}</p>
               <p className="text-xs md:text-sm text-muted-foreground mt-1">{s.l}</p>
             </div>
           ))}
@@ -80,7 +80,7 @@ function HomePage() {
       {/* Two paths */}
       <section className="container-page py-20">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Care that works for everyone</h2>
+          <h2 className="text-fluid-3xl font-bold">Care that works for everyone</h2>
           <p className="mt-3 text-muted-foreground">Whether you're seeking support or providing it, CareNest brings you together.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -109,7 +109,7 @@ function HomePage() {
       <section className="bg-gradient-soft py-20">
         <div className="container-page">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold">How CareNest works</h2>
+            <h2 className="text-fluid-3xl font-bold">How CareNest works</h2>
             <p className="mt-3 text-muted-foreground">Three simple steps to confident, consistent care.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -134,7 +134,7 @@ function HomePage() {
       {/* Testimonials */}
       <section className="container-page py-20">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Loved by families and workers</h2>
+          <h2 className="text-fluid-3xl font-bold">Loved by families and workers</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
@@ -165,7 +165,7 @@ function HomePage() {
               <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 text-xs font-medium">
                 <ShieldCheck className="size-3.5" /> Safety first
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-4">Your child's safety is our priority</h2>
+              <h2 className="text-fluid-3xl font-bold mt-4">Your child's safety is our priority</h2>
               <p className="mt-4 opacity-90 leading-relaxed">Every worker on CareNest is identity-verified, police-checked and reference-screened. We provide insurance, secure payments and 24/7 support.</p>
               <Button variant="warm" size="lg" className="mt-6" asChild>
                 <Link to="/safety">Learn about safety <ArrowRight className="size-4" /></Link>
@@ -186,7 +186,7 @@ function HomePage() {
       <section className="container-page pb-24">
         <div className="text-center max-w-2xl mx-auto">
           <Users className="size-12 mx-auto text-primary" />
-          <h2 className="text-3xl md:text-4xl font-bold mt-4">Ready to find the right care?</h2>
+          <h2 className="text-fluid-3xl font-bold mt-4">Ready to find the right care?</h2>
           <p className="mt-3 text-muted-foreground">Join thousands of families who have found their perfect match on CareNest.</p>
           <div className="flex flex-wrap gap-3 justify-center mt-6">
             <Button variant="hero" size="xl" asChild><Link to="/signup">Get started for free</Link></Button>

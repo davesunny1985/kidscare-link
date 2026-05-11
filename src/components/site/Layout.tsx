@@ -18,43 +18,43 @@ function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/60">
-      <div className="container-page flex h-16 items-center justify-between">
+      <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-2 group">
           <span className="size-9 rounded-xl bg-gradient-primary grid place-items-center shadow-soft group-hover:shadow-glow transition-smooth">
             <Heart className="size-5 text-primary-foreground" fill="currentColor" />
           </span>
           <span className="font-display text-lg font-bold tracking-tight">CareNest</span>
         </Link>
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden xl:flex items-center gap-1">
           {nav.map((n) => (
             <Link
               key={n.to}
               to={n.to}
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-md transition-smooth"
-              activeProps={{ className: "px-3 py-2 text-sm font-semibold text-primary rounded-md" }}
+              className="px-2.5 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-md transition-smooth whitespace-nowrap"
+              activeProps={{ className: "px-2.5 py-2 text-sm font-semibold text-primary rounded-md whitespace-nowrap" }}
               activeOptions={{ exact: n.to === "/" }}
             >
               {n.label}
             </Link>
           ))}
         </nav>
-        <div className="hidden lg:flex items-center gap-2">
-          <Button variant="ghost" asChild><Link to="/login">Log in</Link></Button>
+        <div className="hidden md:flex items-center gap-2">
+          <Button variant="ghost" size="sm" asChild><Link to="/login">Log in</Link></Button>
           <Button variant="hero" asChild><Link to="/signup">Get started</Link></Button>
         </div>
-        <button className="lg:hidden p-2" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button className="xl:hidden p-2 -mr-2" onClick={() => setOpen(!open)} aria-label="Menu">
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
       </div>
       {open && (
-        <div className="lg:hidden border-t border-border bg-background">
+        <div className="xl:hidden border-t border-border bg-background">
           <div className="container-page py-3 flex flex-col gap-1">
             {nav.map((n) => (
               <Link key={n.to} to={n.to} onClick={() => setOpen(false)} className="px-3 py-2 rounded-md hover:bg-muted">
                 {n.label}
               </Link>
             ))}
-            <div className="flex gap-2 pt-2">
+            <div className="flex gap-2 pt-2 md:hidden">
               <Button variant="outline" className="flex-1" asChild><Link to="/login">Log in</Link></Button>
               <Button variant="hero" className="flex-1" asChild><Link to="/signup">Get started</Link></Button>
             </div>

@@ -50,7 +50,7 @@ function ServicesPage() {
 
       <section className="container-page pb-20">
         <div className="rounded-3xl bg-gradient-soft p-10 md:p-14 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold">Not sure what you need?</h2>
+          <h2 className="text-fluid-2xl font-bold">Not sure what you need?</h2>
           <p className="mt-3 text-muted-foreground max-w-xl mx-auto">Our friendly team can help you understand your options and find the right support for your child.</p>
           <Button variant="hero" size="lg" className="mt-6" asChild><Link to="/contact">Talk to us</Link></Button>
         </div>

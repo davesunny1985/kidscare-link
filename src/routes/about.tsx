@@ -31,7 +31,7 @@ function AboutPage() {
       />
 
       <section className="container-page py-20 max-w-3xl">
-        <h2 className="text-2xl md:text-3xl font-bold">Our story</h2>
+        <h2 className="text-fluid-2xl font-bold">Our story</h2>
         <div className="mt-5 space-y-4 text-muted-foreground leading-relaxed text-lg">
           <p>CareNest started in 2021 when two families struggled to find consistent, quality support for their children. Frustrated by long wait times, agency fees and rotating staff, they imagined something different — a place where families could connect directly with the people who'd care for their kids.</p>
           <p>Today, CareNest supports over 12,000 families across Australia. Every day we work to make the experience of finding care more human — for families and for the incredible workers who choose this profession.</p>
@@ -40,7 +40,7 @@ function AboutPage() {
 
       <section className="bg-gradient-soft py-20">
         <div className="container-page">
-          <h2 className="text-3xl md:text-4xl font-bold text-center">What we believe</h2>
+          <h2 className="text-fluid-3xl font-bold text-center">What we believe</h2>
           <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {values.map((v) => (
               <div key={v.t} className="bg-card rounded-2xl p-6 text-center shadow-card border border-border/60">
