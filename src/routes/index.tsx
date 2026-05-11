@@ -22,7 +22,7 @@ function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-hero">
-        <div className="container-page grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
+        <div className="container-page grid md:grid-cols-2 gap-8 md:gap-12 items-center section-y">
           <div className="space-y-6">
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-border text-xs font-medium shadow-soft">
               <Sparkles className="size-3.5 text-accent" /> Trusted by 12,000+ families
@@ -41,7 +41,7 @@ function HomePage() {
                 <Link to="/workers">Become a provider</Link>
               </Button>
             </div>
-            <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-1.5"><ShieldCheck className="size-4 text-primary" /> Police checked</div>
               <div className="flex items-center gap-1.5"><Star className="size-4 text-accent" fill="currentColor" /> 4.9 average rating</div>
             </div>
