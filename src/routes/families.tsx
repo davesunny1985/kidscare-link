@@ -41,7 +41,7 @@ function FamiliesPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <img src={img} alt="Support worker with child" loading="lazy" width={1280} height={896} className="rounded-3xl shadow-elegant w-full aspect-[4/3] object-cover" />
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold">Care that fits your family</h2>
+            <h2 className="text-fluid-3xl font-bold">Care that fits your family</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">Every child is different. Find someone who shares your values, understands your child's needs and becomes a trusted part of your family.</p>
             <ul className="mt-6 space-y-3">
               {["Browse profiles, photos, videos and reviews","Message workers privately before you commit","Read verified reviews from other families","Set your own rate or browse by budget","Cancel or change bookings anytime"].map((x) => (
@@ -54,7 +54,7 @@ function FamiliesPage() {
 
       <section className="bg-gradient-soft py-20">
         <div className="container-page">
-          <h2 className="text-3xl md:text-4xl font-bold text-center max-w-2xl mx-auto">Why families choose CareNest</h2>
+          <h2 className="text-fluid-3xl font-bold text-center max-w-2xl mx-auto">Why families choose CareNest</h2>
           <div className="mt-12 grid md:grid-cols-3 gap-5">
             {benefits.map((b) => (
               <div key={b.t} className="bg-card rounded-2xl p-6 shadow-card border border-border/60">

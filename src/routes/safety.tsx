@@ -38,7 +38,7 @@ function SafetyPage() {
       </section>
       <section className="container-page pb-20">
         <div className="rounded-3xl bg-gradient-primary text-primary-foreground p-10 md:p-14 text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold">Worried about something?</h2>
+          <h2 className="text-fluid-2xl font-bold">Worried about something?</h2>
           <p className="mt-3 opacity-90">Our trust & safety team is available 24/7. We'll listen, investigate and act.</p>
           <Button variant="warm" size="lg" className="mt-6" asChild><Link to="/contact">Contact safety team</Link></Button>
         </div>
