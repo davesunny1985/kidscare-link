@@ -2,6 +2,7 @@ import { Link, Outlet } from "@tanstack/react-router";
 import { Heart, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Toaster } from "@/components/ui/sonner";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -121,6 +122,7 @@ export function SiteLayout() {
       <Header />
       <main className="flex-1"><Outlet /></main>
       <Footer />
+      <Toaster richColors position="top-center" />
     </div>
   );
 }
